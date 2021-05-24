@@ -4,6 +4,7 @@ import Chat from './Chat';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState } from 'react';
 import Login from './Login';
+import HomePage from './HomePage';
 import { useStateValue } from './StateProvider';
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
                 <Chat />
               </Route>
               <Route path="/">
-                <Chat />
+                <HomePage />
               </Route>
             </Switch>
           </Router>
